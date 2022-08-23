@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="16139994-2b5b-48f8-8b9e-fa5745ec2f1d">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="nombrecompleto" class="java.lang.String"/>
+	<parameter name="numerodocumento" class="java.lang.String"/>
+	<parameter name="telefono" class="java.lang.String"/>
+	<parameter name="fechanacimiento" class="java.lang.String"/>
+	<parameter name="direccioncompleta" class="java.lang.String"/>
+	<parameter name="email" class="java.lang.String"/>
+	<parameter name="empresa" class="java.lang.String"/>
+	<parameter name="otrosdatos" class="java.lang.String"/>
+	<parameter name="estadolaboral" class="java.lang.String"/>
+	<parameter name="observaciones" class="java.lang.String"/>
+	<parameter name="operaciones" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="516" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="0" width="555" height="516" backcolor="#99CCFF" uuid="e6420aba-60f2-4602-9d8c-afa0963ddee8"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="36" y="125" width="83" height="20" uuid="c2a30508-57fb-4d12-bf03-e63f3310639d"/>
+				<text><![CDATA[Nombre completo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="125" width="100" height="20" uuid="95b55b1d-c37d-46c0-964a-1ce2d00bfdda"/>
+				<text><![CDATA[Número documento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="165" width="100" height="20" uuid="aa58e02f-d04e-42ee-a724-f86a8a3eef11"/>
+				<text><![CDATA[Fecha de nacimiento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="203" width="70" height="20" uuid="a6c85639-e7f8-44bc-9594-56e47c60bc23"/>
+				<text><![CDATA[Otros datos:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="238" width="100" height="20" uuid="cea349fb-7abd-4a9f-af85-50ff0daa89c1"/>
+				<text><![CDATA[Dirección completa:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="277" width="42" height="20" uuid="2b0ae3d5-a1ff-4fd2-b702-8aa7001e937f"/>
+				<text><![CDATA[Teléfono:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="277" width="46" height="20" uuid="def587a6-74e1-445b-88b6-58613929851e"/>
+				<text><![CDATA[Empresa:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="312" width="63" height="20" uuid="375cc5ca-a98e-4936-9de1-26bdab891bb8"/>
+				<text><![CDATA[Razón Social:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="312" width="34" height="20" uuid="1a5c9751-08f1-461c-b88a-80e1fc2147d1"/>
+				<text><![CDATA[Email: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="348" width="70" height="20" uuid="354841f6-7c32-4638-b638-ec862a6e78aa"/>
+				<text><![CDATA[Observaciones:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="213" y="478" width="128" height="20" uuid="c0bd44d6-a955-487e-8f9f-cd62be4329b1"/>
+				<text><![CDATA[TOTAL DE OPERACIONES:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="136" y="125" width="178" height="20" uuid="65324869-be2d-4484-a17e-75facebff0e4"/>
+				<textFieldExpression><![CDATA[$P{nombrecompleto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="425" y="125" width="100" height="20" uuid="1139ce08-95e6-47bc-8c13-578e87e31c8f"/>
+				<textFieldExpression><![CDATA[$P{numerodocumento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="165" width="160" height="20" uuid="68740f21-d1b6-46ea-ba74-4dc418460612"/>
+				<textFieldExpression><![CDATA[$P{fechanacimiento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="203" width="371" height="20" uuid="a5d8542d-f11b-4f84-babf-d37a2fabaf4b"/>
+				<textFieldExpression><![CDATA[$P{otrosdatos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="238" width="371" height="20" uuid="49d65f1b-6f60-4c32-9c45-855c69753935"/>
+				<textFieldExpression><![CDATA[$P{direccioncompleta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="277" width="180" height="20" uuid="cf62dbe4-9de0-44b0-b18a-573149d5605b"/>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="277" width="112" height="20" uuid="f721a9fa-9ed5-4532-a058-f0192349dc13"/>
+				<textFieldExpression><![CDATA[$P{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="312" width="202" height="20" uuid="47ebc0c9-fa16-43ec-8b1b-f3f80140414c"/>
+				<textFieldExpression><![CDATA[$P{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="312" width="112" height="20" uuid="76a20f58-dcdf-4db1-bae7-316e0a23a87d"/>
+				<textFieldExpression><![CDATA[$P{estadolaboral}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="368" width="489" height="95" uuid="3b31b4e7-2e7d-416b-99bd-b7340744813e"/>
+				<textFieldExpression><![CDATA[$P{observaciones}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="478" width="100" height="20" uuid="0dc1ce5f-f8bd-4c80-b26a-c1ba1d3c4c0c"/>
+				<textFieldExpression><![CDATA[$P{operaciones}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="36" y="14" width="629" height="131" uuid="5186a343-a4c5-49c3-aab9-a4f49cc340cb"/>
+				<imageExpression><![CDATA["Imagenes/Logotipoweb.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+</jasperReport>
